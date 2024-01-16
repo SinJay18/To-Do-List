@@ -1,0 +1,94 @@
+.main-container{
+    width: 30%;
+    background-color: rgba(224, 120, 196, 0.208);
+    border-radius: 10px;
+    margin: 0px auto;
+    padding: 10px 20px;
+    }
+    
+    header{
+    border: 1px dashed rgb(171, 31, 31);
+    border-radius: 15px;
+    height: 35px;
+    margin-bottom: 15px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    
+    .sub-header{
+    border: 1px dashed rgb(171, 31, 31);
+    border-radius: 15px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    
+    .task-container{
+    padding: 15px;
+    margin: 0px auto;
+    }
+    
+    .task-card{
+    width: 80%;
+    margin: 0px auto;
+    border: 1px solid rgb(224, 18, 18);
+    border-radius: 25px;
+    background-color: rgba(255, 0, 0, 0.228);
+    padding: 10px;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr;
+    }
+    
+    .task-card-completed{
+    border: 1px solid rgb(12, 136, 43);
+    border-radius: 25px;
+    background-color: rgba(0, 255, 136, 0.228);
+    }
+
+time {
+grid-column-start: 3;
+grid-row-start: 3;
+justify-self: end;
+}
+
+.button-x{
+    width: 30px;
+    height: 30px;
+    grid-column-start: 3;
+    justify-self: end;
+}
+
+.checkbox-container{
+    grid-row-start: 2;
+    justify-self: center;
+    align-self: center;
+}
+.input-button{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.todo-text{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    justify-self: center;
+}
+p{
+    font-size: 22px;
+    margin: 0px;
+}
+
+.task-card-completed p{
+    text-decoration: line-through;
+}
+button{
+    cursor: pointer;
+}
