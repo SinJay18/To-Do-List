@@ -12,20 +12,19 @@
     height: 35px;
     margin-bottom: 15px;
     padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     }
-    
+    form{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     .sub-header{
     border: 1px dashed rgb(171, 31, 31);
     border-radius: 15px;
     height: 30px;
     margin-bottom: 10px;
     padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     }
     
     .task-container{
@@ -47,8 +46,15 @@
     }
     
     .task-card-completed{
-    border: 1px solid rgb(12, 136, 43);
-    border-radius: 25px;
+        width: 80%;
+        margin: 0px auto;
+        border-radius: 25px;
+        padding: 10px;
+        margin-bottom: 15px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 0.5fr;
+    border: 1px solid rgb(27, 71, 38);
     background-color: rgba(0, 255, 136, 0.228);
     }
 
@@ -81,13 +87,13 @@ justify-self: end;
     grid-row-start: 2;
     justify-self: center;
 }
-p{
+span{
     font-size: 22px;
     margin: 0px;
 }
 
-.task-card-completed p{
-    text-decoration: line-through;
+.task-card-completed span{
+text-decoration: line-through;
 }
 button{
     cursor: pointer;
