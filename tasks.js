@@ -1,8 +1,8 @@
-import { createButton, addInput } from './mapping.js';
-import { taskContainer } from './index.js';
-import { renderTasks } from './render.js';
-import { setToLocalStorage } from './index.js';
-import { usersTasks } from './index.js';
+import { createButton, addInput } from './mapping.js'
+import { taskContainer } from './index.js'
+import { renderTasks } from './render.js'
+import { setToLocalStorage } from './index.js'
+import { usersTasks } from './index.js'
 
 export const addToDo = (task, text, date, id, isCompleted) => {
 
@@ -31,10 +31,8 @@ export const addToDo = (task, text, date, id, isCompleted) => {
 
 export function changeCardState(task) {
     if (task.isCompleted === false) {
-        // console.log("checked")
         task.isCompleted = true
     } else if (task.isCompleted === true) {
-        // console.log("unchecked")
         task.isCompleted = false
     }
     renderTasks()
