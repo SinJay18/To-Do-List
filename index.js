@@ -1,6 +1,6 @@
-import { addEventListenerSubmit, deleteAllTasksTrigger, deleteLastTaskTrigger } from './listeners.js';
-import { createButton, createForm, addInput } from './mapping.js';
-import { renderTasks } from './render.js';
+import { addEventListenerSubmit, deleteAllTasksTrigger, deleteLastTaskTrigger } from './listeners.js'
+import { createButton, createForm, addInput } from './mapping.js'
+import { renderTasks } from './render.js'
 
 //! Переменные разметки
 const root = document.getElementById('root')
@@ -36,12 +36,12 @@ export let usersTasks = []
 export function getDataLocalStorage() {
     if (localStorage.getItem('todos')){
         usersTasks = JSON.parse(localStorage.getItem('todos'))
-        renderTasks();
+        renderTasks()
     }
 }
 
 export function setToLocalStorage(key, task) {
-    localStorage.setItem('todos', JSON.stringify(usersTasks));
+    localStorage.setItem('todos', JSON.stringify(usersTasks))
 }
 
 addEventListenerSubmit()
